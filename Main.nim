@@ -10,5 +10,5 @@ var client: Socket
 var address = ""
 while true:
     socket.acceptAddr(client, address)
-    echo("Client connected from: ", address)
+    #echo("Client connected from: ", address)
     spawn connectionhandler(client, address)
